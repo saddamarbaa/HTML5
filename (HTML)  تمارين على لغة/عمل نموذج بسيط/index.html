@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Form</title>
+  <!-- simple stling-->
+  <style>
+    body{font-size:20px}
+    input
+    {
+      padding: 10px;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  
+  
+  <form action="recieve.php" target="_blank" method="GET">
+  <fieldset>
+    <legend><h4>Personal Information</h4></legend>
+    <label for="name"> User Name</label>
+    <input type="text" name = "name" placeholder="Write Your UserName" required> 
+    <br>
+    <label for="email"> Email</label>
+    <input type="email" id="email" name="email" placeholder="Write Valid Email" required> 
+    <br>
+    <label for="name"> Phone</label>
+    <input type="tel" id="phone" name="phone"> 
+  </fieldset>
+
+  <h4>Operation System</h4>
+  <input type="radio" name="Windows" value="Windows">
+  <label for="Windows">Windows</label> <br>
+  <input type="radio" name="Windows" value="Windows">
+  <label for="Linux">Linux</label> <br>
+  <input type="radio" name="Windows" value="Windows">
+  <label for="Linux">Linux</label> 
+  <h4>Skills</h4>
+  <input type="checkbox" name="html" value="html">
+  <label for="html">HTML</label> <br>
+  <input type="checkbox" name="Css" value="css">
+  <label for="html">CSS</label> <br>
+  <input type="checkbox" name="js" value="js">
+  <label for="js">JS</label> <br>
+  <input type="reset" value="Reset">
+  <input type="submit" value="Send">
+  </form>
+</body>
+</html>
